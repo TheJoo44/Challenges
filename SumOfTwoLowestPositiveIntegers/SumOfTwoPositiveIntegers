@@ -1,0 +1,4 @@
+function sumTwoSmallestNumbers(numbers) {  
+  let sortedNums = numbers.sort(function(a, b){return a - b}).filter(num => num > 0);
+  return sortedNums[0] + sortedNums[1];
+}
